@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+    <script src="https://preview.babylonjs.com/babylon.js"></script>
+    <script src="https://preview.babylonjs.com/gui/babylon.gui.min.js"></script>
+    <script src="https://preview.babylonjs.com/cannon.js"></script>
+    <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>    
+    <script src="/scripts/RWXepj.js"></script>
+    <script src="./scripts/sceneCreator.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Beth+Ellen|Roboto&display=swap" rel="stylesheet">
+    <title>Babylon_js&Cannon_js</title>
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #renderCanvas {
+            width: 100%;
+            height: 100%;
+            display: block;
+            font-size: 0;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>   
+    <canvas id="renderCanvas" touch-action="none"></canvas>
+    <script>
+        if (!Detector.webgl) Detector.addGetWebGLMessage()
+    </script>    
+	<script src="./scripts/main.js"></script>
+</body>
+</html>
